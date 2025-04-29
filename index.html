@@ -60,7 +60,7 @@
                 <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zdravko Dugonjic</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Harish PM</a></span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Harish PM</a>,</span>
                     <span class="author-block">
                       <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Roberto Calandra</a>
                   </span>
@@ -135,8 +135,8 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+        Fruit plucking is a simple and intuitive task for humans and yet particularly difficult for robots, as they involve interacting with variable and uncertain dynamics. 
+        We addresses this problem of autonomous tomato plucking using a robot arm equipped with an anthropomorphic hand, focusing on learning to adapt to external forces and object variability during contact-rich manipulation</h2>
     </div>
   </div>
 </section>
@@ -150,9 +150,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Robotic manipulation of soft, deformable objects remains a complex challenge due to nonlinear contact dynamics, variable material properties, and limited sensing fidelity. In this work, we present a system for autonomous tomato plucking using a 7-DOF arm equipped with an anthropomorphic hand and multimodal sensing—vision, touch, and proprioception. We formulate the task as a sequential decision-making problem and train an imitation learning policy via behavior cloning from 86 human teleoperated demonstrations collected using custom sensorized gloves. We evaluate three model classes—LSTM, Transformer, and ACT—across multiple sensory modalities on 240 autonomous trials involving real and magnetically-attached tomatoes.
+            Robotic manipulation of soft, deformable objects remains a complex challenge due to nonlinear contact dynamics, variable material properties, and limited sensing fidelity. 
+            In this work, we present a system for autonomous tomato plucking using a 7-DOF arm equipped with an anthropomorphic hand and multimodal sensing—vision, touch, and proprioception. 
+            We formulate the task as a sequential decision-making problem and train an imitation learning policy via behavior cloning from 86 human teleoperated demonstrations collected using custom sensorized gloves. 
+            
+            We evaluate three model classes—LSTM, Transformer, and ACT—across multiple sensory modalities on 240 autonomous trials involving real and magnetically-attached tomatoes.
             Our results highlight the importance of tactile sensing and modality fusion.
-            The ACT architecture with full modality input (P+V+T) achieved the highest success rate (up to 93.75\% on toy tomatoes and 50\% on real tomatoes) and demonstrated robust plucking behavior under real-world uncertainties. Furthermore, we report true positive rates exceeding 60\% in cases where the model predicted successful detachment with 10s achieved as the least time of completion. This work contributes a complete system for contact-rich soft-object manipulation, a multimodal demonstration dataset, and a detailed analysis of sensor-model combinations in unstructured environments.
+            The ACT architecture with full modality input (P+V+T) achieved the highest success rate (up to 93.75% on toy tomatoes and 50% on real tomatoes) and demonstrated robust plucking behavior under real-world uncertainties. Furthermore, we report true positive rates exceeding 60\% in cases where the model predicted successful detachment with 10s achieved as the least time of completion. This work contributes a complete system for contact-rich soft-object manipulation, a multimodal demonstration dataset, and a detailed analysis of sensor-model combinations in unstructured environments.
           </p>
         </div>
       </div>
