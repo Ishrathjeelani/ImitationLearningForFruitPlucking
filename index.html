@@ -56,14 +56,14 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ishrath I</a><sup>*</sup>,</span>
-                <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous</a><sup>*</sup>,</span>
+                <!-- <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zdravko Dugonjic</a>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Harish PM</a>,</span>
                     <span class="author-block">
                       <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Roberto Calandra</a>
-                  </span>
+                  </span> -->
                   </div>
 
                   <div class="is-size-5 publication-authors">
@@ -126,12 +126,12 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <!-- <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -139,8 +139,26 @@
         We addresses this problem of autonomous tomato plucking using a robot arm equipped with an anthropomorphic hand, focusing on learning to adapt to external forces and object variability during contact-rich manipulation</h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+          <p>
+            <img src="static/images/pipeline.png" style="max-width: 100%; height: auto;">
+          </p>
+          <br>
+          <p>
+            Fruit plucking is a simple and intuitive task for humans and yet particularly difficult for robots, as they involve interacting with variable and uncertain dynamics. 
+            We addresses this problem of autonomous tomato plucking using a robot arm equipped with an anthropomorphic hand, focusing on learning to adapt to external forces and object variability during contact-rich manipulation
+            through Imitation learning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -163,38 +181,59 @@
     </div>
   </div>
 </section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Collection and Validation setup</h2>
+        <div class="content has-text-justified">
+          <p>
+            <img src="static/images/setup.pdf" style="max-width: 100%; height: auto;">
+          </p>
+          <br>
+          <p>
+            The experimental platform consists of a 7-DOF robotic manipulator, an anthropomorphic robotic hand, multimodal sensing units, and a custom teleoperation interface. This setup supports both demonstration collection through human teleoperation and the autonomous deployment of learned control policies.
+            A total of 86 expert demonstrations of the plucking task were recorded by fixing tomatoes at random position in workspace.
+            Later, after training the models, 240 experiments were carried out to understand the model's performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- End paper abstract -->
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+       <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
-     <div class="item">
+     <div class="item"> -->
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2>
@@ -202,7 +241,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
@@ -233,29 +272,29 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Demonstrations of Plucking of Tomato using ACT Model</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <source src="static/videos/Fail_ToyTomato.MP4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
+            <source src="static/videos/Success_RealTomato.mov"
+            type="video/mov">
           </video>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+        <!-- <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <!-- <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
