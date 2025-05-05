@@ -67,7 +67,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">IIT Gandhinagar and TU Dresden<br>CoRL 2025</span>
+                    <!-- <span class="author-block">IIT Gandhinagar and TU Dresden<br>CoRL 2025</span> -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -202,8 +202,53 @@
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Imitation Learning</h2>
+        <div class="content has-text-justified">
+          <div style="text-align: center;">
+            <img src="static/images/models.PNG" style="max-width: 100%; height: auto;">
+          </div>
+          <br>
+          <p>
+            The goal of our learning framework is to predict the robot’s future actions given its current multimodal sensory state. 
+            We formulate this as a regression problem: given a window of recent observations, the model must predict the upcoming sequence of robot actions and a task status variable. 
+            We adopt a Behavior Cloning (BC) approach, in which the model learns a direct mapping from states to actions using supervised learning on expert demonstrations.
+            Three different model designs, LSTM, Transformer, and Action-Conditioned Trans-
+            former. We use different modalities as input and predict the next robot actions (State output) and
+            task status (Success Probability).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Collection and Validation setup</h2>
+        <div class="content has-text-justified">
+          <div style="text-align: center;">
+            <img src="static/images/results_left.png" style="max-width: 50%; height: auto;">
+            <img src="static/images/results_right.png" style="max-width: 50%; height: auto;">
+          </div>
+          <br>
+          <p>
+            Through extensive ablation studies, we show that the Action-Conditioned Transformer (ACT) architecture is the only model capable of reliably learning task dynamics. Models incorporating tactile input performs
+            comparable to others, with the ACT model conditioned on proprioception, vision, and touch (P+V+T) achieving success rates of 93.75% on toy tomatoes. The ACT model trained on all modalities has the highest 
+            success percentage of 93.75% and 50% on Toy and real tomatoes. The least time taken to complete the task was 10s by Proprioception+Vison and Proprioception+Vision+Tactile ACT model. 
+            Our results highlight the importance of tactile sensing and expressive policy architectures in fine manipulation. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <!-- <section class="hero is-small">
